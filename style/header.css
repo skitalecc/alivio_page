@@ -7,8 +7,6 @@
     align-items: center;
 }
 
-.header__nav {
-}
 
 .header_nav-list {
     display: flex;
@@ -20,8 +18,6 @@
     
 }
 
-.header__nav-item {
-}
 
 .header__nav-link {
     font-size: 20px;
