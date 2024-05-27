@@ -1,0 +1,96 @@
+.product {
+    padding: 115px 0 240px  0;
+}
+
+.product__wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    padding: 0 30px;
+}
+
+.product__preview {
+    border-radius: 18px;
+    overflow: hidden;
+    height: 570px;
+}
+
+.product__preview-img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.product__content {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.product__info {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--co-light-black);
+}
+
+.product__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--co-light-green);
+}
+
+.product__desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--co-light-black);
+}
+
+.product__btn {
+    margin: 20px 0;
+    width: 230px;
+    height: 65px;
+}
+
+@media (max-width: 992px){
+    .product__title{
+        font-size: 32px;
+    }
+
+    .product__content{
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 768px){
+    .product__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .product__preview{
+        height: 470px;
+    }
+
+    .product__content{
+        font-size: 28px;
+    }
+
+    .product__desc{
+        font-size: 16px;
+    }
+    
+    .product__wrapper .person-card{
+        display: none;
+    }
+}
+
+
+
+

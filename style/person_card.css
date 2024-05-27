@@ -1,0 +1,73 @@
+.person-card {
+    position: absolute;
+    top: 360px;
+    left: 5px;
+    width: 300px;
+    background-color: var(--co-white);
+    height: 290px;
+    padding: 20px 0;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0 , 0, .3);
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.person-card__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--co-black);
+    position: relative;
+}
+
+.person-card__title::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--co-black)
+}
+
+.person-card__preview {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}  
+
+.person-card__preview-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: -30px -10px;
+}
+
+.person-card__info {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
+
+
+.person-card__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.person-card__list {
+    list-style: disc;
+    margin: 10px 0 0 15px;
+}
+
+.person-card__list-item {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 15px 0 0 0 ;
+}
