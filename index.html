@@ -1,98 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alivio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="assets/favicon.png" type="image/png" />
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alivio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <svg class="logo" aria-label="logo">
+          <use href="assets/spites.svg#logo-icon"></use>
+        </svg>
+        <nav class="header__nav" aria-label="navigation list">
+          <ul class="header_nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Why Alivio</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Solutions</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Community</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button type="button" class="btn btn--signin">Sign in</button>
+          <button type="button" class="btn">Start Trial</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="main section">
       <div class="container">
-        <div class="header__wrapper">
-          <svg class="logo" aria-label="logo">
-            <use href="assets/spites.svg#logo-icon"></use>
-          </svg>
-          <nav class="header__nav" aria-label="navigation list">
-            <ul class="header_nav-list">
-                <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Why Alivio</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Solutions</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Community</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">Pricing</a>
-                </li>  
-          </nav>
-          <div class="header__actions">
-            <button type="button" class="btn btn--signin">Sign in</button>
-            <button type="button" class="btn">Start Trial</button>
+        <div class="hero__content">
+          <h1 class="hero__title">Be we are Manage well</h1>
+          <p class="hero_desc" aria-label="main description">Everyone experiences stress in different ways.
+            Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+          <button type="button" class="btn">Find your way</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" aria-label="about section">
+      <div class="container">
+        <!-- <h3 class="about__subtitle">How it works</h3> -->
+        <div class="about__content">
+          <h2 class="about__title">Understand & Release
+            the stress in 3 steps</h2>
+          <p class="about__desc">
+            Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness,
+            or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how
+            to manage stress.
+          </p>
+        </div>
+
+        <div class="about__cards">
+          <figure class="card" aria-label="first step">
+            <h3 class="card__title">Personalize</h3>
+            <p class="card__desc" aria-label="first card desc">
+              Answer a quick survey about how you express yourself, what causes you stress, and what area would you like
+              to work on. This way, we can fully personalize your journal!</p>
+            <img src="assets/webp/card_1.webp" alt="card image 1" class="card__img">
+          </figure>
+
+          <figure class="card" aria-label="second step">
+            <h3 class="card__title card__title_right">Write & Understand</h3>
+            <p class="card__desc" aria-label="second card desc">
+              Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your
+              stress!</p>
+            <img src="assets/webp/card_2.webp" alt="card image 2" class="card__img">
+          </figure>
+
+          <figure class="card " aria-label="third step">
+            <h3 class="card__title card__title_third">Alivio!</h3>
+            <p class="card__desc" aria-label="third card desc">
+              Now you are aware, and have a way to manage and overcome your own stress.
+              What are you waiting for? Alivio today!</p>
+            <img src="assets/webp/card_3.webp" alt="card image 3" class="card__img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="success" aria-label="success section" id="success-id">
+      <div class="container">
+        <div class="success__wrapper">
+          <div class="success__content">
+            <h3 class="success__title">Let's hear about Kayla's success story</h3>
+            <p class="success__description">See how well Alivio works in a real customer's life.</p>
+            <button class="btn">Let's get started</button>
+          </div>
+
+          <div class="success__content-video">
+            <img src="assets/webp/video_cover.webp" class="success__cover" alt="video cover img">
+            <svg class="success__play-icon" aria-label="play icon">
+              <use href="assets/spites.svg#play-icon"></use>
+            </svg>
+            <div class="success__gradient"></div>
           </div>
         </div>
       </div>
-    </header>
+    </section> -->
 
-    <main>
-      <section class="hero" aria-label="main section">
-        <div class="container">
-          <div class="hero__content">
-            <h1 class="hero__title">Be we are Manage well</h1>
-            <p class="hero_desc" aria-label="main description">Everyone experiences stress in different ways.
-            Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-            <button type="btn " class="btn">Find your way</button>
+    <section class="success" aria-label="success section" id="success-id">
+      <div class="container">
+        <div class="success__wrapper">
+          <div class="success__content">
+            <h3 class="success__title">Let's hear about Kayla's success story</h3>
+            <p class="success__description">See how well Alivio works in a real customer’s life.</p>
+            <button class="btn">Let's get started</button>
+          </div>
+
+          <div class="success__content-video">
+            <img src="assets/webp/video_cover.webp" class="success__cover" alt="video cover img">
+            <svg class="success__play-icon" aria-label="play icon">
+              <use href="assets/sprites.svg#play-icon"></use>
+            </svg>
+            <div class="success__gradient"></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" aria-label="about section">
-        <div class="container">
-          <!-- <h3 class="about__subtitle">How it works</h3> -->
-          <div class="about__content">
-            <h2 class="about__title">Understand & Release 
-              the stress in 3 steps</h2>
-            <p class="about__desc">
-              Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.
-            </p>
-          </div>
 
-          <div class="about__cards">
-            <figure class="card" aria-label="first step">
-              <h3 class="card__title">Personalize</h3>
-              <p class="card__desc" aria-label="first card desc">
-                Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
-              <img src="assets/webp/card_1.webp" alt="card image 1" class="card__img">
-            </figure>
+  </main>
+</body>
 
-            <figure class="card" aria-label="second step">
-              <h3 class="card__title card__title_right">Write & Understand</h3>
-              <p class="card__desc" aria-label="second card desc">
-                Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
-              <img src="assets/webp/card_2.webp" alt="card image 2" class="card__img">
-              </figure>
-
-            <figure class="card " aria-label="third step">
-              <h3 class="card__title card__title_third">Alivio!</h3>
-              <p class="card__desc" aria-label="third card desc">
-                Now you are aware, and have a way to manage  and overcome your own stress.
-                What are you waiting for? Alivio today!</p>
-              <img src="assets/webp/card_3.webp" alt="card image 3" class="card__img">
-            </figure>
-          </div>
-
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
