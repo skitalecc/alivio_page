@@ -3,7 +3,8 @@
     position: absolute;
     top: 35px;
     left: 15px;
-
+    
+    z-index: 999;
 }
 
 .mobile-nav__burger {
@@ -30,7 +31,8 @@
     background-color: var(--co-white);
     translate: -100% 0;
     transition: translate .33s;
-    z-index: 999;
+    z-index: 998;
+    width: 75%;
 }
 
 .mobile-nav-list {
@@ -42,7 +44,7 @@
 
 
 .mobile-nav-link {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .mobile-nav-link:hover{
