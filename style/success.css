@@ -107,5 +107,9 @@
     .success__description{
         font-size: 20px;
     }
+
+    .success__wrapper .btn{
+        margin-bottom: 60px;
+    }
 }
 
