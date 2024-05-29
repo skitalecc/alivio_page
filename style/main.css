@@ -46,7 +46,7 @@
 @media (max-width: 480px){
     .hero{
         background: linear-gradient(180deg, rgba(245, 246, 252, 0.52), rgba(255, 178, 139, .52)),
-        url('/assets/webp/BG.webp') center/cover no-repeat;
+        url('assets/webp/BG.webp') center/cover no-repeat;
 
     }
     .hero__title{
